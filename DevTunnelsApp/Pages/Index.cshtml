@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "NASA POTD";
+}
+
+<div class="container">
+    <div class="text-center">
+        <h1 class="display-4">@Model?.Apod?.title</h1>
+        <img src="@Model?.Apod?.url" alt="@Model?.Apod?.title" class="img-fluid" />
+        <p class="mt-3">@Model?.Apod?.explanation</p>
+    </div>
+</div>
