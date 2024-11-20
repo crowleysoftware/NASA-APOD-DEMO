@@ -1,0 +1,9 @@
+@TunnelAPI_HostAddress = http://localhost:7172
+
+### Azure Function
+GET {{TunnelAPI_HostAddress}}/api/apod
+Accept: application/json
+
+### API to private tunnel
+GET https://qwms6np2-7199.use.devtunnels.ms/weatherforecast
+X-Tunnel-Authorization: tunnel eyJhbGciOiJFUzI1NiIsImtpZCI6IkEwQUQzODkwOTY4NjJERjY4NUI2RDMyMUE2N0I5RTE4MUZERUUzN0YiLCJ0eXAiOiJKV1QifQ.eyJjbHVzdGVySWQiOiJ1c2UiLCJ0dW5uZWxJZCI6ImZ1bi1sYWtlLThoczU1MzgiLCJzY3AiOiJjb25uZWN0IiwiZXhwIjoxNzMyMTUwNTk1LCJpc3MiOiJodHRwczovL3R1bm5lbHMuYXBpLnZpc3VhbHN0dWRpby5jb20vIiwibmJmIjoxNzMyMDYzMjk1fQ.17Xy6ZFxfg7iiz1QpqhYUNxOtwaDGlxfQeYE2EMKKVtR46UbB2L_GFVPkrRNISYYZaYLs_faxHjioncNGltJLg
