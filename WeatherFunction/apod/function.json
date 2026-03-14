@@ -1,0 +1,22 @@
+{
+  "bindings": [
+    {
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in",
+      "authLevel": "function",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    }
+  ],
+  "description": "Returns the NASA Astronomy Picture of the Day (APOD) data including title, explanation, date, and image URL.",
+  "scriptFile": "../NasaFunction.dll",
+  "entryPoint": "WeatherFunction.NasaFunctions.Run"
+}
